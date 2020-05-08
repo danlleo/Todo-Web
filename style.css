@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    background-image: radial-gradient( circle farthest-corner at -14.3% -17.5%,  rgba(245,168,168,1) 4%, rgba(164,168,248,1) 100.2% );
+}
+
+form {
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input {
+    padding: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    color: rgb(37, 37, 37);
+    height: 50px;
+    width: 400px;
+    border: 3px solid #FFD74D;
+    outline: none;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 24px -2px rgba(138, 138, 138, 0.479);
+    -moz-box-shadow: 0px 0px 24px -2px rgba(138, 138, 138, 0.479);
+    box-shadow: 0px 0px 24px -2px rgba(138, 138, 138, 0.479);
+    transition: all 0.2s ease;
+}
+
+form input:hover {
+    -webkit-box-shadow: 0px 0px 24px -2px rgba(138,138,138,0.8);
+    -moz-box-shadow: 0px 0px 24px -2px rgba(138,138,138,0.8);
+    box-shadow: 0px 0px 24px -2px rgba(138,138,138,0.8);    
+}
+
+header {
+    color: white;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Merriweather', serif;
+}
+
+footer {
+    min-height: 70vh;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer h3 {
+    border-bottom: 2px solid white;
+}
+
+.submit-button {
+    outline: none;
+    cursor: pointer;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 25%;
+    background-color: #FFD74D;
+    height: 50px;
+    width: 60px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: rgb(252, 197, 0);
+}
+
+.submit-button i {
+    font-size: 25px;
+    color: rgb(63, 63, 63);
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 25%;
+    list-style: none;
+}
+
+.todo {
+    background-color: white;
+    color: black;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+    -webkit-box-shadow: 14px 13px 21px -6px rgba(0,0,0,0.19);
+    -moz-box-shadow: 14px 13px 21px -6px rgba(0,0,0,0.19);
+    box-shadow: 14px 13px 21px -6px rgba(0,0,0,0.19);
+    transition: all 0.3s ease;
+}
+
+.todo:hover {
+    -webkit-box-shadow: 14px 13px 21px -6px rgba(0,0,0,0.36);
+    -moz-box-shadow: 14px 13px 21px -6px rgba(0,0,0,0.36);
+    box-shadow: 14px 13px 21px -6px rgba(0,0,0,0.36);
+}
+
+.todo li {
+    font-family: 'Oswald', sans-serif;
+    padding-left: 0.8rem;
+    flex: 1;
+}
+
+.fas fa-check-square, .fas fa-trash-alt {
+    pointer-events: none;
+}
+
+.trash-btn, .complete-btn {
+    outline: none;
+    background-color: greenyellow;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    
+}
+
+.trash-btn {
+    background-color: red;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
